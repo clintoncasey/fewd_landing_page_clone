@@ -1,8 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,47 +15,109 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
-	background-color: LightGray;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End of Reset */
+/* Start of Custom Styles */
+.content {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  bottom: 0;
+  height: 600px; 
+    
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+.content {
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 970px;
+    height: 70px;
+    margin: 0 auto;
 }
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
 }
 .top-navigation > .content {
-    width: 970px;
-    height: 70px;
-    margin: 0 auto;
-}
-div {
-    border: 1px solid Chocolate;
-}
 
-ol, ul {
-	list-style: none;
 }
-blockquote, q {
-	quotes: none;
+.top-navigation .logo {
+    height: 70px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+.introduction .content h1{
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        -webkit-font-smoothing: antialiased;
+
+}
+.introduction .content h3{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        -webkit-font-smoothing: antialiased;
+
 }
